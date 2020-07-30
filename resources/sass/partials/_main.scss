@@ -1,0 +1,9 @@
+main {
+  .col_before {
+    background-color: $bg_color;
+  }
+  .col_after {
+    background-color: $secondary_color;
+    color: white;
+  }
+}

@@ -10942,6 +10942,15 @@ nav .logo {
   width: 100px;
 }
 
+main .col_before {
+  background-color: #e8ebf1;
+}
+
+main .col_after {
+  background-color: #1b3c59;
+  color: white;
+}
+
 footer {
   background-color: #1b3c59;
 }
