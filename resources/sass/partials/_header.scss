@@ -1,5 +1,76 @@
-nav {
-  .logo {
-    width: 100px;
+.header_wrapper {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .logo_brand {
+    flex-basis: 200px;
+    vertical-align: middle;
   }
+  .navigation_menu  {
+    display: flex;
+    align-items: center;
+  }
+  .navigation_menu li {
+    margin: 0 35px;
+  }
+  a {
+    text-transform: uppercase;
+    color: $secondary_color;
+  }
+  .primary_button {
+    background-color: $primary_color;
+    border: 1px solid $primary_color;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    color: white;
+  }
+  .burgher_icon {
+    display: none;
+  }
+  .burgher_icon i {
+    color: grey;
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 992px ) {
+  .header_wrapper {
+  }
+  .header_wrapper .burgher_icon {
+    display: block;
+  }
+  .header_navigation {
+    display: none;
+  }
+}
+.burgher_navigation {
+  background-color: $secondary_color;
+  position: relative;
+  display: none;
+}
+.burgher_navigation .burgher_menu {
+  list-style-type: none;
+}
+.burgher_navigation.active {
+  display: block;
+}
+.burgher_navigation a {
+  color: white;
+}
+.burgher_navigation a {
+  text-transform: uppercase;
+  color: white;
+  margin: 25px 25px;
+  font-size: 35px;
+}
+.burgher_navigation .close_burgher_menu {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  color: white;
+  font-size: 50px;
 }

@@ -10938,8 +10938,102 @@ img {
   width: 100%;
 }
 
-nav .logo {
-  width: 100px;
+.navigation_menu {
+  list-style-type: none;
+}
+
+.header_wrapper {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_wrapper .logo_brand {
+  flex-basis: 200px;
+  vertical-align: middle;
+}
+
+.header_wrapper .navigation_menu {
+  display: flex;
+  align-items: center;
+}
+
+.header_wrapper .navigation_menu li {
+  margin: 0 35px;
+}
+
+.header_wrapper a {
+  text-transform: uppercase;
+  color: #1b3c59;
+}
+
+.header_wrapper .primary_button {
+  background-color: #61ce4e;
+  border: 1px solid #61ce4e;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.header_wrapper .burgher_icon {
+  display: none;
+}
+
+.header_wrapper .burgher_icon i {
+  color: grey;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .header_wrapper .burgher_icon {
+    display: block;
+  }
+
+  .header_navigation {
+    display: none;
+  }
+}
+
+.burgher_navigation {
+  background-color: #1b3c59;
+  position: relative;
+  display: none;
+}
+
+.burgher_navigation .burgher_menu {
+  list-style-type: none;
+}
+
+.burgher_navigation.active {
+  display: block;
+}
+
+.burgher_navigation a {
+  color: white;
+}
+
+.burgher_navigation a {
+  text-transform: uppercase;
+  color: white;
+  margin: 25px 25px;
+  font-size: 35px;
+}
+
+.burgher_navigation .close_burgher_menu {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  color: white;
+  font-size: 50px;
+}
+
+main {
+  padding-top: 60px;
 }
 
 main .col_before {

@@ -1,24 +1,34 @@
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
+  <div class="header_wrapper">
+    <div class="logo_brand">
       <img src="{{ asset('img/logo.png')}}" alt="logo" class="logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="{{ route('home')}}">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Corso</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Dopo il corso</a>
-        </li>
+    </div>
+    <div class="burgher_icon">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="header_navigation">
+      <ul class="navigation_menu">
+        <li><a href="{{ route('home')}}">Home</a></li>
+        <li><a href="#">Corso</a></li>
+        <li><a href="#">Dopo il corso</a></li>
+        <li><a href="#">Lezione gratuita</a></li>
+        <li><a href="#">Assumi i nostri studenti</a></li>
+        <li><button type="button" class="primary_button">Candidati ora</button></li>
       </ul>
     </div>
-  </nav>
+  </div>
+
+  <div class="burgher_navigation">
+    <ul class="burgher_menu">
+      <li><a href="{{ route('home')}}">Home</a></li>
+      <li><a href="#">Corso</a></li>
+      <li><a href="#">Dopo il corso</a></li>
+      <li><a href="#">Lezione gratuita</a></li>
+      <li><a href="#">Assumi i nostri studenti</a></li>
+      <li> <a href="#">Candidati ora</a></li>
+    </ul>
+    <div class="close_burgher_menu">
+      <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+  </div>
 </header>
