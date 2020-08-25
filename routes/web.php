@@ -20,7 +20,10 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 Route::get('/privacy', function () {
-    return view('privacy');
+    $privacy_policy = config('privacy.privacy_policy');
+    return view('privacy',
+    ['privacy_policy' => $privacy_policy]
+  );
 })->name('privacy');
 Route::get('/faq', function () {
 
