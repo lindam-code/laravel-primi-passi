@@ -10932,7 +10932,6 @@ a.text-dark:focus {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #1b3c59;
 }
 
 img {
@@ -11039,16 +11038,36 @@ img {
 }
 
 main {
-  padding-top: 60px;
+  margin-top: 80px;
+  color: #1b3c59;
 }
 
-main .col_before {
+main .faq .col_before {
   background-color: #e8ebf1;
+  padding: 25px 60px;
 }
 
-main .col_after {
+main .faq .col_after {
   background-color: #1b3c59;
   color: white;
+  padding: 25px 60px;
+}
+
+main .faq .hide_icon {
+  font-size: 25px;
+  float: right;
+}
+
+main .faq .show_answer {
+  cursor: pointer;
+}
+
+main .faq .answer_faq {
+  display: none;
+}
+
+main .faq .answer_faq.show {
+  display: block;
 }
 
 footer {

@@ -1,10 +1,30 @@
 main {
-  padding-top: 60px;
-  .col_before {
-    background-color: $bg_color;
+  margin-top: 80px;
+  color: $secondary_color;
+  // Sezione Faq
+  .faq {
+    .col_before {
+      background-color: $bg_color;
+      padding: 25px 60px;
+    }
+    .col_after {
+      background-color: $secondary_color;
+      color: white;
+      padding: 25px 60px;
+    }
+    .hide_icon {
+      font-size: 25px;
+      float: right;
+    }
+    .show_answer {
+      cursor: pointer;
+    }
+    .answer_faq {
+      display: none;
+    }
+    .answer_faq.show {
+      display: block;
+    }
   }
-  .col_after {
-    background-color: $secondary_color;
-    color: white;
-  }
+  // Fine sezione Faq
 }
